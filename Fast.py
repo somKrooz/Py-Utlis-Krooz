@@ -11,16 +11,15 @@ def getRandomHeader():
     return val
 
 urls = []
-for i in range(5):
+for i in range(3):
     urls.append('https://api.waifu.im/search')
 
 def fetch_url(url):
 
     hdr = {
         'include_tags': 'maid',
-        "Authorization":'IbbDSpAQ8xJuRM0zobKhDM9_CRfBPbC9K3L3F_gXBR6IpcF-ZGfuCdU2ITy1qDvfcMFr-7-X2ae5UcDiabtibSlC4ooRIujLX8XmO8CZW_LpY1hNz5AXax8kwlI8l2RRnNc2ClxpseIbi5xinaNT8JMjY61wFRMdgmvjOX4bRyk',
         'Accept-Version': 'v5',
-        'Retry-After': '.3',
+        'Retry-After': '.3'
     }
     
     param = {
